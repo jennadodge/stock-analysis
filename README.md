@@ -52,8 +52,9 @@ The refactored code for AllStocksAnalysisRefactored ran in 0.1054688 seconds for
 ![AllStocksAnalysisRefactored_Run_Time_2017](VBA_Challenge_2017.png)
 ![AllStocksAnalysisRefactored_Run_Time_2018](VBA_Challenge_2018.png)
 
-
-
 ## Summary
 
-The small changes to the code made a big difference in the speed of analysis. The refactored code was able to complete the analysis on the 2017 data 585% faster than the original code, while the 2018 data was analyzed 
+The small changes to the code made a big difference in the speed of analysis. According to our one data point, the refactored code was able to complete the analysis on the 2017 data 585% faster than the original code (0.1054688 vs 0.6171875 seconds), while the 2018 data was analyzed 616% faster (0.9765625 vs 0.6015625 seconds).
+
+### Recommended Further Analysis
+If we wanted to have a better idea of just how much faster the refactored code is then we need more data points. I recommending writing a macro to iterate 100 times through each of the years of stock data with the old code and the refactored code then calculate the average time required to run the new and the old code and use those values to more accurately determine how much faster the new code is vs the old code. 
